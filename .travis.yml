@@ -3,7 +3,7 @@ services
   - docker
 
 before_install:
-  - docker build -t JarnoKoo/docker-test -f Dockerfile.dev .
+  - docker build -t jarnokoo/docker-test -f Dockerfile.dev .
 
 script:
-  - docker run JarnoKoo/docker-test npm run test -- --coverage
+  - docker run jarnokoo/docker-test npm run test -- --coverage
